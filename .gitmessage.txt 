@@ -1,0 +1,22 @@
+# <type>(<scope>): <subject> 형식으로 작성하며 제목은 최대 50글자 정도로만 입력한다.
+
+################
+# 본문(추가 설명)을 아랫줄에 작성한다.
+
+################
+# 꼬리말(footer)을 아랫줄에 작성한다.
+# footer에 'BREAKING CHANGE:'를 넣으면 major 변경
+
+################
+# build: 빌드 시스템 또는 외부 패키지와 관련된 수정사항 (example scopes: gulp, broccoli, npm)
+# chore: 빌드 부분 혹은 패키지 매니저 관련 사소한 수정사항
+# ci: CI 설정 파일 또는 스크립트 수정사항 (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+# docs: 문서 수정사항
+# feat: 새로운 기능 추가
+# fix: 버그 수정
+# perf: 성능 관련 수정 사항
+# refactor: 코드 리팩토링
+# revert: 이전 코드로 복원
+# style: 코드 의미에 영향을 주지 않는 변경사항 (포맷팅 관련)
+# test: 테스트 코드 추가
+################
