@@ -19,13 +19,20 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+
     "baseUrl": ".",
     "paths": {
       "@src/*": [
         "src/*"
       ],
+      "@constants/*": [
+        "src/constants/*"
+      ],
       "@pages/*": [
         "src/pages/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
       ]
     }
   },
