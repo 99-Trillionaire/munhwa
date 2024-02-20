@@ -28,6 +28,9 @@
       "@constants/*": [
         "src/constants/*"
       ],
+      "@locales/*": [
+        "src/locales/*"
+      ],
       "@pages/*": [
         "src/pages/*"
       ],
