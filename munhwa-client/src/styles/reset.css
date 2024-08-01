@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    /*color: inherit;*/
+}
+
+a:hover, a:focus, a:active, button:hover, button:focus, button:active {
+    cursor: pointer;
+
+}
+
+a:disabled, button:disabled {
+    cursor: not-allowed;
+}
