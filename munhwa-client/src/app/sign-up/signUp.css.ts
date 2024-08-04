@@ -4,8 +4,10 @@ import { vars } from "@styles/theme.css";
 export const signUpStyle = style({
 	display: "flex",
 	flexDirection: "column",
-	alignItems: "center",
-	padding: "2rem 0"
+	alignItems: "stretch",
+	padding: "2rem 0",
+	margin:"0 auto",
+	width: 450,
 });
 
 globalStyle(`${signUpStyle} .title`, {
@@ -15,17 +17,10 @@ globalStyle(`${signUpStyle} .title`, {
 	marginBottom: "0.5rem"
 });
 
-
-
 export const boxStyle = style({
 	backgroundColor: "white",
 	padding: "1.5rem",
-	borderRadius: "0.75rem",
-
-})
-
-globalStyle(`${signUpStyle} > a`, {
-
-
-
+	borderRadius: "0.75rem"
 });
+
+globalStyle(`${signUpStyle} > a`, {});

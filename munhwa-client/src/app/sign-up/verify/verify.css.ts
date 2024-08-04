@@ -21,7 +21,9 @@ export const row = style({
 	flexGrow: "1"
 });
 
-export const labelStyle = style({});
+export const labelStyle = style({
+	flexGrow: 1
+});
 
 export const inputStyle = style({
 	flexGrow: "1",
@@ -47,8 +49,8 @@ export const formStyle = style([
 		width: 450,
 		display: "flex",
 		flexDirection: "column",
-		gap: "0.5rem",
-		justifyContent: "center"
+		gap: "0.5rem"
+		// justifyContent: "center"
 		// gridTemplateAreas: `"label input input button" "empty message message message"`
 	}
 ]);
@@ -66,8 +68,6 @@ export const linkStyle = style({
 	padding: "0.5rem 1rem",
 	borderRadius: 6,
 	selectors: {
-		[`&:hover`]: {
-
-		}
+		[`&:hover`]: {}
 	}
 });
