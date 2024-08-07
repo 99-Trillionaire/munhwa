@@ -29,16 +29,4 @@ export const logoStyle = style({
 	// text-shadow: -1px 0px yellow, 0px 1px yellow, 1px 0px yellow, 0px -1px yellow;
 });
 
-export const buttonStyle = style({
-	borderRadius: "0.5rem",
-	backgroundColor: "white",
-	padding: "0.5rem 0.8rem",
-	boxShadow: "1px 1px 5px rgba(0, 0, 0, 0.3)",
-	//0 30px 60px -20px rgba(0, 0, 0, 0.5)
 
-	selectors:{
-		[`&:hover`]:{
-			boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.3)",
-		}
-	}
-});

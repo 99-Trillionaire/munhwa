@@ -1,0 +1,9 @@
+
+{
+  "SignUpPage": {
+    "title": {
+      "verify": "이메일 인증",
+      "register": "회원 정보 입력"
+    }
+  }
+}

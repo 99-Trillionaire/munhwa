@@ -5,7 +5,6 @@ import InputMessage, { IMessage } from "@components/InputMessage";
 import useInput from "@hooks/useInput";
 import { FormEvent, useEffect, useState } from "react";
 import { EMAIL_REG } from "@src/constants/reg";
-import Link from "next/link";
 import {
 	btnRedStyle,
 	formStyle,
@@ -14,7 +13,8 @@ import {
 	linkStyle,
 	messageStyle,
 	row
-} from "@app/sign-up/verify/verify.css";
+} from "./verify.css";
+import { Link } from "@src/navigation";
 
 export default function VerifyPage() {
 	const [step, setStep] = useState<"init" | "wait" | "complete">("init");
