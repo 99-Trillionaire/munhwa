@@ -23,14 +23,15 @@
       ],
       "@app/*": [
         "./src/app/*"
-      ],"@components/*": [
+      ],
+      "@commonComponents/*": [
+        "./src/components/common/*"
+      ],
+      "@components/*": [
         "./src/components/*"
       ],
       "@hooks/*": [
         "./src/hooks/*"
-      ],
-      "@layouts/*": [
-        "./src/layouts/*"
       ],
       "@styles/*": [
         "./src/styles/*"

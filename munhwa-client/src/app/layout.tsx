@@ -3,7 +3,6 @@ import "@styles/reset.css";
 import "@styles/theme.css";
 import "@styles/globalStyle.css";
 import type { AppProps } from "next/app";
-import MainLayout from "src/layouts/MainLayout";
 
 export const metadata: Metadata = {
 	title: "Home",
@@ -20,7 +19,7 @@ export default function RootLayout({
 	return (
 		<html lang="ko">
 			<body>
-				<MainLayout>{children}</MainLayout>
+			{children}
 			</body>
 		</html>
 	);
