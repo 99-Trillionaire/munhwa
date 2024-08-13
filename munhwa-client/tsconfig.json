@@ -18,27 +18,15 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@public/*": [
-        "./public/*"
-      ],
-      "@app/*": [
-        "./src/app/*"
-      ],
-      "@commonComponents/*": [
-        "./src/components/common/*"
-      ],
-      "@components/*": [
-        "./src/components/*"
-      ],
-      "@hooks/*": [
-        "./src/hooks/*"
-      ],
-      "@styles/*": [
-        "./src/styles/*"
-      ],
-      "@src/*": [
-        "./src/*"
-      ]
+      "@icons/*": ["./public/assets/icons"],
+      "@public/*": ["./public/*"],
+      "@app/*": ["./src/app/*"],
+      "@commonComponents/*": ["./src/components/common/*"],
+      "@components/*": ["./src/components/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@layout/*": ["./src/layout/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@src/*": ["./src/*"]
     },
     "plugins": [
       {

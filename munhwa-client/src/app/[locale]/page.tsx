@@ -1,7 +1,7 @@
 import * as style from "./page.css";
 import Image from "next/image";
 import ContentsSection, { ICategory } from "@components/Contents/ContentsSection";
-import TestImage from "@public/static/images/test.png";
+import TestImage from "@public/assets/images/test.png";
 import { Link } from "@src/navigation";
 
 const TEST_CATEGORIES:ICategory[] = [

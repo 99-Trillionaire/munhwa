@@ -1,5 +1,9 @@
-
 {
+  "locale": {
+    "placeholder": "언어",
+    "ko": "한국어",
+    "en": "English"
+  },
   "SignUpPage": {
     "title": {
       "verify": "이메일 인증",
