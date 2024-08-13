@@ -3,7 +3,7 @@
 import { ReactNode, useEffect, useState } from "react";
 
 import * as styles from "./index.css";
-import DownArrowIcon from "@public/assets/icons/down-chevron.svg";
+import DownArrowIcon from "@icons/down-chevron.svg";
 import { scrollAreaStyle } from "./index.css";
 
 // import SelectOption, { SelectOptionProp } from "@commonComponents/SelectBox/SelectOption";

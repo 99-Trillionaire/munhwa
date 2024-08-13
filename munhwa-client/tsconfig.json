@@ -18,7 +18,7 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@icons/*": ["./public/assets/icons"],
+      "@icons/*": ["./public/assets/icons/*"],
       "@public/*": ["./public/*"],
       "@app/*": ["./src/app/*"],
       "@commonComponents/*": ["./src/components/common/*"],
