@@ -1,19 +1,30 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+// import { unstable_setRequestLocale } from "next-intl/server";
+
 import * as styles from "./index.css";
 
 import { locales } from "@src/i18n";
 import Logo from "@commonComponents/Logo";
-import SelectBox from "@commonComponents/SelectBox";
-import { unstable_setRequestLocale } from "next-intl/server";
-import { useTranslations } from "next-intl";
+import SelectBox, { SelectOptionProp } from "@commonComponents/SelectBox";
+import { usePathname, useRouter } from "@src/navigation";
+
+// import { useCallback } from "react";
 
 interface Props {
 	locale: string;
 }
 
 const Nav = ({ locale }: Props) => {
-	unstable_setRequestLocale(locale);
+	// unstable_setRequestLocale(locale);
 	const t = useTranslations("");
+	const router = useRouter();
+	const pathname = usePathname();
 	const localeOptions = locales.map(locale => ({ key: locale, value: locale, label: t(`locale.${locale}`) }));
+
+	const onSelectLocale = (selectedOption: SelectOptionProp<string>) =>
+		router.replace(pathname, { locale: selectedOption.value });
 
 	return (
 		<nav className={styles.navStyle}>
@@ -22,7 +33,8 @@ const Nav = ({ locale }: Props) => {
 				locale={locale}
 				options={localeOptions}
 				placeholder={t("locale.placeholder")}
-				prevOption={{ key: locale, value: locale, label: t(`locale.${locale}`) }}
+				selectedOption={{ key: locale, value: locale, label: t(`locale.${locale}`) }}
+				onSelect={onSelectLocale}
 			/>
 		</nav>
 	);
