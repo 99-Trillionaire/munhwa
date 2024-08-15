@@ -7,5 +7,6 @@ export const vars = createGlobalTheme(':root',{
 		["mainGreen"]: "#73A526",
 		["mainIvory"]: "#faf6ee",
 		["test"]: "#737373",
+		["test1"]: "#5c5c5c",
 	}
 });

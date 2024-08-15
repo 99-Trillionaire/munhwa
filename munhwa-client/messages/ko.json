@@ -4,6 +4,16 @@
     "ko": "한국어",
     "en": "English"
   },
+  "common": {
+    "title": {
+      "person": "님"
+    }
+  },
+  "mainPage": {
+    "logout": "로그아웃",
+    "login": "로그인",
+    "join": "회원가입"
+  },
   "SignUpPage": {
     "title": {
       "verify": "이메일 인증",

@@ -23,6 +23,7 @@
       "@app/*": ["./src/app/*"],
       "@commonComponents/*": ["./src/components/common/*"],
       "@components/*": ["./src/components/*"],
+      "@constants/*": ["./src/constants/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@layout/*": ["./src/layout/*"],
       "@styles/*": ["./src/styles/*"],

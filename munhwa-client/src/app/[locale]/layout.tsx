@@ -6,7 +6,7 @@ import { Noto_Sans_KR } from "next/font/google";
 
 import MainLayout from "@layout/MainLayout";
 
-const font = Noto_Sans_KR({subsets:["latin"]})
+// const font = Noto_Sans_KR({subsets:["latin"]})
 
 export default async function LocaleLayout({
 	children,
@@ -22,7 +22,8 @@ export default async function LocaleLayout({
 
 	return (
 		<html lang={locale}>
-			<body className={font.className}>
+			{/*<body className={font.className}>*/}
+			<body >
 				<NextIntlClientProvider messages={messages}>
 					<MainLayout locale={locale}>{children}</MainLayout>
 				</NextIntlClientProvider>

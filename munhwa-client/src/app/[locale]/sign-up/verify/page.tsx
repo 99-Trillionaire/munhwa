@@ -1,7 +1,7 @@
 "use client";
 
 import Form from "@components/Form";
-import InputMessage, { IMessage } from "@components/InputMessage";
+import InputMessage, { IMessage } from "@commonComponents/InputMessage";
 import useInput from "@hooks/useInput";
 import { FormEvent, useEffect, useState } from "react";
 import { EMAIL_REG } from "@src/constants/reg";

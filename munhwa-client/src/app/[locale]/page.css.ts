@@ -8,12 +8,7 @@ export const mainStyle = style({
 	gridTemplateColumns: "200px 1fr",
 });
 
-export const profileContainerStyle = style([
-	boxStyle,
-	{
-		// gridArea: "profile"
-	}
-]);
+
 
 export const buttonStyle = style({
 	borderRadius: "0.5rem",

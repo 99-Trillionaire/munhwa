@@ -1,4 +1,4 @@
-import { messageStyleVariant } from "@components/InputMessage/index.css";
+import { messageStyleVariant } from "./index.css";
 
 type MessageType = "info" | "warning" | "success";
 

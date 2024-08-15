@@ -1,7 +1,7 @@
 import { ChangeEvent, DetailedHTMLProps, InputHTMLAttributes } from "react";
 import { inputStyle,  } from "@components/FormInput/FormInput.css";
-import {  messageStyleVariant } from "@components/InputMessage/index.css";
-import { IMessage } from "@components/InputMessage";
+import {  messageStyleVariant } from "@commonComponents/InputMessage/index.css";
+import { IMessage } from "@commonComponents/InputMessage";
 
 interface IProps extends DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> {
 	label?: string;

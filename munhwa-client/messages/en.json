@@ -4,6 +4,16 @@
     "ko": "한국어",
     "en": "English"
   },
+  "common": {
+    "title": {
+      "person": ""
+    }
+  },
+  "mainPage": {
+    "logout": "Sign Out",
+    "login": "Sign In",
+    "join": "Sign Up"
+  },
   "SignUpPage": {
     "title": {
       "verify": ""
