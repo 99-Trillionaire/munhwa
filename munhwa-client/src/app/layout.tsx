@@ -4,10 +4,13 @@ import "@styles/theme.css";
 import "@styles/globalStyle.css";
 import type { AppProps } from "next/app";
 
+
 export const metadata: Metadata = {
 	title: "Home",
 	description: "Welcome to Next.js"
 };
+
+
 
 export default function RootLayout({
 	// Layouts must accept a children prop.

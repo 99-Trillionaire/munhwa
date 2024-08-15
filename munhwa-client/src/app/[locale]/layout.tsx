@@ -1,7 +1,12 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@src/i18n";
+
+import { Noto_Sans_KR } from "next/font/google";
+
 import MainLayout from "@layout/MainLayout";
+
+const font = Noto_Sans_KR({subsets:["latin"]})
 
 export default async function LocaleLayout({
 	children,
@@ -17,7 +22,7 @@ export default async function LocaleLayout({
 
 	return (
 		<html lang={locale}>
-			<body>
+			<body className={font.className}>
 				<NextIntlClientProvider messages={messages}>
 					<MainLayout locale={locale}>{children}</MainLayout>
 				</NextIntlClientProvider>
