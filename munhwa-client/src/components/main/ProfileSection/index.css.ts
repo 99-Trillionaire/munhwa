@@ -10,7 +10,8 @@ export const profileSectionStyle = style([
 		flexDirection: "column",
 		justifyContent: "center",
 		alignItems: "center",
-		gap: "1rem"
+		gap: "1rem",
+		position: "relative"
 	}
 ]);
 
@@ -40,5 +41,22 @@ export const profileButtonStyle = style({
 	transition: "0.3s",
 	":hover": {
 		backgroundColor: vars.color.mainIvory
+	}
+});
+
+export const profileEditButtonStyle = style({
+	position: "absolute",
+	right: 10,
+	top: 10,
+	width: 25,
+	height: 25,
+	padding: 3,
+	border: "1px solid #737373EE",
+	borderRadius: 5,
+	transition: "0.3s",
+	color: "#737373",
+	":hover": {
+		color: vars.color.mainRed,
+		borderColor: vars.color.mainRed
 	}
 });

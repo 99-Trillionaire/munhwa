@@ -1,14 +1,18 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { Link } from "@src/navigation";
 import * as style from "./index.css";
 
 import ProfileIcon from "@icons/profile-image.png";
+import EditIcon from "@icons/edit.svg";
+
 import TEST_IMAGE from "public/assets/images/Grogu.jpeg";
 import TEST_DATA from "@constants/testData";
-import { useTranslations } from "next-intl";
-import { Link } from "@src/navigation";
+import { profileEditButtonStyle } from "./index.css";
+
 
 interface Props {
 	locale: string;
@@ -20,13 +24,14 @@ const ProfileSection = ({ locale }: Props) => {
 
 	return (
 		<section className={style.profileSectionStyle}>
-			<div className={style.profileImageContainerStyle}>
-				{/*<Image src={TEST_IMAGE || ProfileIcon} alt={"img_profile"} width={50} height={50}/>*/}
-				<Image src={isAuthenticated ? TEST_IMAGE : ProfileIcon} alt={"img_profile"} width={75} height={75} />
-			</div>
+
 
 			{isAuthenticated ? (
 				<>
+					<Link href={"/setting/account"} className={style.profileEditButtonStyle}><EditIcon/></Link>
+					<div className={style.profileImageContainerStyle}>
+						<Image src={TEST_IMAGE || ProfileIcon} alt={"img_profile"} width={75} height={75} />
+					</div>
 					<div className={style.userInfoStyle}>
 						{TEST_DATA.USER_INFO.nickname}
 						&nbsp;
@@ -38,6 +43,9 @@ const ProfileSection = ({ locale }: Props) => {
 				</>
 			) : (
 				<>
+					<div className={style.profileImageContainerStyle}>
+						<Image src={ProfileIcon} alt={"img_profile"} width={75} height={75} />
+					</div>
 					<button className={style.profileButtonStyle} onClick={() => setIsAuthenticated(true)}>
 						{t("mainPage.login")}
 					</button>
