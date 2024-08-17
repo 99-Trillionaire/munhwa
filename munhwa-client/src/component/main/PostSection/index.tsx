@@ -3,13 +3,13 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@src/navigation";
+import { assignInlineVars } from "@vanilla-extract/dynamic";
 
 import * as styles from "./index.css";
 
 import { CategoryType } from "@type/content";
 
 import TEST_DATA from "@constant/testData";
-import { assignInlineVars } from "@vanilla-extract/dynamic";
 
 const DEFAULT_CATEGORY: CategoryType = {
 	key: "all",
@@ -32,21 +32,28 @@ const PostSection = ({ categories = [] }: Props) => {
 	// 	setContents();
 	// },[selectedCategory])
 
+	const onClickCategory = (category: CategoryType) => setSelectedCategory(category);
+
 	return (
 		<section className={styles.postContainerStyle}>
 			<div className={styles.categoryContainerStyle}>
-				{[DEFAULT_CATEGORY, ...categories]?.map(({ key, label, color }) =>
-					key === selectedCategory?.key ? (
-						<Link href={`/category/${key}`} key={key} className={styles.categoryStyle}>
-							{key === "all" ? t(label) : t("common.category.name", { value: label })}
+				{[DEFAULT_CATEGORY, ...categories]?.map(category =>
+					category.key === selectedCategory?.key ? (
+						<Link href={`/category/${category.key}`} key={category.key} className={styles.categoryStyle}>
+							{category.key === DEFAULT_CATEGORY.key
+								? t(category.label)
+								: t("common.category.name", { value: category.label })}
 						</Link>
 					) : (
 						<button
-							key={key}
+							key={category.key}
 							className={styles.categoryStyle}
-							style={assignInlineVars({ [styles.setCategoryColor]: color })}
+							style={assignInlineVars({ [styles.setCategoryColor]: category.color })}
+							onClick={() => onClickCategory(category)}
 						>
-							{key === "all" ? t(label) : t("common.category.name", { value: label })}
+							{category.key === DEFAULT_CATEGORY.key
+								? t(category.label)
+								: t("common.category.name", { value: category.label })}
 						</button>
 					)
 				)}
