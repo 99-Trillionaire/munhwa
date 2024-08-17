@@ -10,8 +10,7 @@ import ProfileIcon from "@icons/profile-image.png";
 import EditIcon from "@icons/edit.svg";
 
 import TEST_IMAGE from "public/assets/images/Grogu.jpeg";
-import TEST_DATA from "@constants/testData";
-import { profileEditButtonStyle } from "./index.css";
+import TEST_DATA from "@constant/testData";
 
 
 interface Props {

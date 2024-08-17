@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import { vars } from "@styles/theme.css";
+import { vars } from "@style/theme.css";
 import { boxStyle } from "@app/[locale]/sign-up/signUp.css";
 
 export const btnRedStyle = style({

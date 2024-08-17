@@ -8,19 +8,19 @@ import DownArrowIcon from "@icons/down-chevron.svg";
 // TODO: icon 처리
 // TODO: dynamic 적용
 
-export interface SelectOptionProp<T> {
+export interface SelectOptionType<T> {
 	key: string;
 	value: T;
 	label: ReactNode;
 }
 
 export interface SelectBoxProps<T> {
-	options: SelectOptionProp<T>[];
-	selectedOption?: SelectOptionProp<T>;
+	options: SelectOptionType<T>[];
+	selectedOption?: SelectOptionType<T>;
 	placeholder?: ReactNode;
 	disabled?: boolean;
 	locale: string; // 서버연동시에 삭제
-	onSelect: (selectedOption: SelectOptionProp<T>) => void;
+	onSelect: (selectedOption: SelectOptionType<T>) => void;
 }
 
 const SelectBox = <T,>({

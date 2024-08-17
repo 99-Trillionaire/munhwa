@@ -7,6 +7,10 @@
   "common": {
     "title": {
       "person": "님"
+    },
+    "category": {
+      "all": "전체보기",
+      "name": "{value}"
     }
   },
   "mainPage": {

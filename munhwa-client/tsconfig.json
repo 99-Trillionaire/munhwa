@@ -19,14 +19,16 @@
     "baseUrl": ".",
     "paths": {
       "@icons/*": ["./public/assets/icons/*"],
+      "@images/*": ["./public/assets/images/*"],
       "@public/*": ["./public/*"],
       "@app/*": ["./src/app/*"],
-      "@commonComponents/*": ["./src/components/common/*"],
-      "@components/*": ["./src/components/*"],
-      "@constants/*": ["./src/constants/*"],
-      "@hooks/*": ["./src/hooks/*"],
+      "@commonComponent/*": ["./src/component/common/*"],
+      "@component/*": ["./src/component/*"],
+      "@constant/*": ["./src/constant/*"],
+      "@hook/*": ["./src/hook/*"],
       "@layout/*": ["./src/layout/*"],
-      "@styles/*": ["./src/styles/*"],
+      "@style/*": ["./src/style/*"],
+      "@type/*": ["./src/type/*"],
       "@src/*": ["./src/*"]
     },
     "plugins": [

@@ -1,5 +1,5 @@
 import { globalStyle, style } from "@vanilla-extract/css";
-import { vars } from "@styles/theme.css";
+import { vars } from "@style/theme.css";
 
 export const signUpStyle = style({
 	display: "flex",

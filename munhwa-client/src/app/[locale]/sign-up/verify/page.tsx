@@ -1,10 +1,10 @@
 "use client";
 
-import Form from "@components/Form";
-import InputMessage, { IMessage } from "@commonComponents/InputMessage";
-import useInput from "@hooks/useInput";
+import Form from "@component/Form";
+import InputMessage, { IMessage } from "@commonComponent/InputMessage";
+import useInput from "@hook/useInput";
 import { FormEvent, useEffect, useState } from "react";
-import { EMAIL_REG } from "@src/constants/reg";
+import { EMAIL_REG } from "@src/constant/reg";
 import {
 	btnRedStyle,
 	formStyle,

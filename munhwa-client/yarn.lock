@@ -2572,6 +2572,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vanilla-extract/dynamic@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "@vanilla-extract/dynamic@npm:2.1.1"
+  dependencies:
+    "@vanilla-extract/private": "npm:^1.0.5"
+  checksum: 10c0/0c353b6326e73054a5ca1cfbb02e865cd8853e88976d7f53794e91ccf3fdfcab18211ad93750927b05c8d57e3816c1e56b55a8e24ad7f616b5e627339a3d36b6
+  languageName: node
+  linkType: hard
+
 "@vanilla-extract/integration@npm:^7.1.7":
   version: 7.1.7
   resolution: "@vanilla-extract/integration@npm:7.1.7"
@@ -5407,6 +5416,7 @@ __metadata:
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
     "@vanilla-extract/css": "npm:^1.15.3"
+    "@vanilla-extract/dynamic": "npm:^2.1.1"
     "@vanilla-extract/next-plugin": "npm:^2.4.3"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.2.3"

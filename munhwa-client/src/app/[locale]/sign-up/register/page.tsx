@@ -1,4 +1,4 @@
-import Form from "@components/Form";
+import Form from "@component/Form";
 import { formStyle, inputStyle, labelStyle, linkStyle, row } from "@app/[locale]/sign-up/verify/verify.css";
 import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";

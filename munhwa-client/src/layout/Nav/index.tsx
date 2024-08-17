@@ -6,8 +6,8 @@ import { useTranslations } from "next-intl";
 import * as styles from "./index.css";
 
 import { locales } from "@src/i18n";
-import Logo from "@commonComponents/Logo";
-import SelectBox, { SelectOptionProp } from "@commonComponents/SelectBox";
+import Logo from "@commonComponent/Logo";
+import SelectBox, { SelectOptionType } from "@commonComponent/SelectBox";
 import { usePathname, useRouter } from "@src/navigation";
 
 // import { useCallback } from "react";
@@ -23,7 +23,7 @@ const Nav = ({ locale }: Props) => {
 	const pathname = usePathname();
 	const localeOptions = locales.map(locale => ({ key: locale, value: locale, label: t(`locale.${locale}`) }));
 
-	const onSelectLocale = (selectedOption: SelectOptionProp<string>) =>
+	const onSelectLocale = (selectedOption: SelectOptionType<string>) =>
 		router.replace(pathname, { locale: selectedOption.value });
 
 	return (

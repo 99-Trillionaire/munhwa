@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import "@styles/reset.css";
-import "@styles/theme.css";
-import "@styles/globalStyle.css";
+import "@style/reset.css";
+import "@style/theme.css";
+import "@style/globalStyle.css";
 import type { AppProps } from "next/app";
 
 
