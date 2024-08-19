@@ -1,5 +1,6 @@
 import { CategoryType } from "@type/content";
 import TestImage from "@images/test.png";
+import { GroupType } from "@type/group";
 
 const USER_INFO = {
 	nickname: "tester",
@@ -26,7 +27,8 @@ const POSTS = [
 		content:
 			"지구에 온 외계인이 과학자를 후원하는데 그 과학자랑 사랑에 빠짐. 그런데 그 과학자가 2가지 물질을 발명함. 그 물질이 2개가 만나면 세계가 초기화댐. 그 죄책감 + 사고로 인해 과학자 사망. 그 과학자의 죽음을 받아들이지 못한 외계인이 물질 하나를 세상에 풂 -> 그 물질에 닿은 여자들이 출산한 아이들이 죄다 능력자 -> 이 아이들을 입양해서 히어로 집단으로 키움 -> 애들 능력으로 시간을 뒤틀어서 그 여자(과학자)가 살아있는 시간선(평행세계)으로 감 -> 행복하게 사는 줄 알았는데 시간선이 뒤틀어졌다는 걸 깨달은 사람들이 생김 -> 깨달은 사람들이 두물질이 닿게 해서 시간선을 초기화하려고 함 ->  이를 막으려고 했는데 실패함: 알고 보니 그 여자가 본인을 살리기 위해 그랬다는 걸 알고 두 물질이 닿게 유도. 외계인한테 자신의 죽음을 받아들이라고 하면서 같이 시간선 초기화",
 		date: "9999/99/99"
-	},{
+	},
+	{
 		id: 2,
 		writer_id: "",
 		content_id: "",
@@ -38,6 +40,23 @@ const POSTS = [
 	}
 ];
 
-const TEST_DATA = { USER_INFO, CATEGORIES, POSTS };
+const GROUPS: GroupType[] = [
+	{
+		id: 1,
+		name: "group1",
+		member_ids: ["abc"],
+		color: "rgba(126,102,234,0.89)",
+		content_ids: []
+	},
+	{
+		id: 2,
+		name: "group2",
+		member_ids: ["def"],
+		color: "rgb(210,80,80)",
+		content_ids: []
+	}
+];
+
+const TEST_DATA = { USER_INFO, CATEGORIES, POSTS, GROUPS };
 
 export default TEST_DATA;
