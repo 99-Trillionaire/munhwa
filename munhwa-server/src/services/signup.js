@@ -24,7 +24,7 @@ router.post('/', async (req, res) => {
             );
             
             // 이메일 발송
-            await sendVerificationEmail(email);
+            await sendVerificationEmail(email, token, expires_at);
 
             return res.status(200).json({ message: 'Email is available' });
 
