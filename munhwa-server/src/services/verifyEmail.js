@@ -12,8 +12,6 @@ router.get('/', async (req, res) => {
             return res.status(400).json({ message: 'Invalid or expired token' });
         }
 
-        const email = verificationResult[0].email;
-
         await connection.query('UPDATE emailverifications SET is_verified = TRUE WHERE token = ? AND is_verified = FALSE', token);
 
         return res.status(200).json({ message: 'Email successfully verified' });
